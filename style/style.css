@@ -62,7 +62,7 @@ li {
 #hero {
     display: flex;
     position: relative;
-    background-image: url(/images/desktop-hero-rob-hiking-sunset.jpeg);
+    background-image: url(../images/desktop-hero-rob-hiking-sunset.jpeg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -150,22 +150,22 @@ main {
 
 #portfolioCard1{
     grid-area: portfolioCard1;
-    background-image: url(/images/portfolio-saleyha-ahsan.jpg);
+    background-image: url(../images/portfolio-saleyha-ahsan.jpg);
 }
 
 #portfolioCard2{
     grid-area: portfolioCard2;
-    background-image: url(/images/portfolio-simon-tutty-photography.jpg);
+    background-image: url(../images/portfolio-simon-tutty-photography.jpg);
 }
 
 #portfolioCard3{
     grid-area: portfolioCard3;
-    background-image: url(/images/portfolio-allclear-window-cleaning.jpg);
+    background-image: url(../images/portfolio-allclear-window-cleaning.jpg);
 }
 
 #portfolioCard4{
     grid-area: portfolioCard4;
-    background-image: url(/images/portfolio-example-grid.jpg);
+    background-image: url(../images/portfolio-example-grid.jpg);
 }
 
 .portfolioCard{
