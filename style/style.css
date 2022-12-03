@@ -1,5 +1,6 @@
 *{
     border: 1px solid black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Header Styles */
@@ -11,5 +12,21 @@ header {
 }
 
 #logo {
-    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    flex-flow: row;
+}
+
+li {
+    margin: 0px 25px;
 }
