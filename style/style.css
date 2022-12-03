@@ -1,6 +1,19 @@
+:root {
+    --brandColor:  rgba(69, 9, 116);
+}
 *{
     border: 1px solid black;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+p {
+    line-height: 1.5;
+}
+
+h1 {
+    color:  var(--brandColor);
+    font-size: 32px;
 }
 
 /* Header Styles */
@@ -29,4 +42,70 @@ ul {
 
 li {
     margin: 0px 25px;
+}
+
+/* Hero Section Style */
+
+#hero {
+    display: flex;
+    position: relative;
+    background-image: url(/images/desktop-hero-rob-hiking-sunset.jpeg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 45vh;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+#heroTitle {
+    align-self: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    max-width: 45%;
+    max-height: 250px;
+    background-color: rgba(255,255,255,0.4);
+    color: var(--whitetext);
+}
+
+/* About Section Styles */
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#about {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+    "aboutAside aboutContent"
+    ;
+}
+
+#aboutAside{
+    grid-area: aboutAside;
+    border-right: 5px solid var(--brandColor);
+    border-bottom: 5px solid var(--brandColor);
+    border-radius: 5px;
+    color: var(--brandColor);
+}
+
+#aboutContent {
+    grid-area: aboutContent;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#aboutContent p {
+    max-width: 50%;
+}
+
+#aboutContent img {
+    border-radius: 10px;
 }
