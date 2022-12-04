@@ -1,7 +1,7 @@
 :root {
-    --brandColor:  rgba(69, 9, 116);
-    --transparentBackground: rgba(255,255,255,0.6);
-    --titleBackground: rgba(111,111,111,0.8);
+    --brandColor:  rgba(69, 9, 116,1);
+    --transparentBackground: rgba(255, 255, 255, 0.429);
+    --titleBackground:  rgba(69, 9, 116,0.75);
     --spaceBetweenElements: 75px;
     --tabletSpaceBetweenElements: 25px;
     --whiteText: white;
@@ -10,8 +10,8 @@
     margin: 0px;
     word-wrap: break-word;
     white-space: normal;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    line-height: 1.4;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
 }
 
 /* Text stylings */
@@ -127,13 +127,10 @@ li:hover {
 
 main {
     max-width: 95%;
-    justify-content: center;
     margin: 0 auto;
 }
 
 /* About Section Styles */
-
-
 
 #about {
     display: grid;
@@ -162,7 +159,7 @@ main {
 }
 
 article img {
-    border-radius: 10px;
+    border-radius: 20px;
     margin-left: 10px;
     max-height: 300px;
 }
@@ -176,7 +173,6 @@ article img {
     grid-template-areas: 
     "workContent workAside"
     ;
-    max-width: 100%;
     margin-bottom: var(--spaceBetweenElements);
 }
 
@@ -206,14 +202,8 @@ article img {
     background-image: url(../images/portfolio-allclear-window-cleaning.jpg);
 }
 
-#portfolioCard4{
-    grid-area: portfolioCard4;
-    background-image: url(../images/portfolio-example-grid.jpg);
-}
-
 .portfolioCard{
     display: flex;
-    position: relative;
     align-items: stretch;
     background-position: center;
     background-size: cover;
@@ -221,22 +211,23 @@ article img {
     height: 50vh;
     align-items: flex-end;
     justify-items: center;
-    margin:2px;
+    margin:5px;
+    border: 1px solid var(--brandColor);
 }
 
 .portfolioCard:hover {
-    z-index: 1;
-    transition: 0.3s;
-    transform: scale(1.1); 
-    border: 2px solid black;
+    transition: all 0.5s ease-in-out;
+    box-shadow: inset 0px 0px 8px
+    var(--brandColor), 0 0 15px
+    var(--brandColor);
 }
 
 .cardTitle{
     text-align: center;
-    background-color: var(--brandColor);
+    background-color: var(--titleBackground);
     flex-grow: 1;
-    padding: 10px;
-
+    padding: 10px 5px 10px 5px;
+    margin-bottom: 15px;
 }
 
 #workAside {
@@ -271,7 +262,7 @@ article img {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-align-items: center;
+    align-items: center;
 }
 
 .contactCards p {
@@ -295,38 +286,16 @@ footer {
 
 footer img {
     border: 1px solid white;
-    margin-bottom: var(--spaceBetweenElements);
+    margin-bottom: var(--tabletSpaceBetweenElements);
 }
 
 /* Tablet styling */
 
 @media screen and (max-width:768px){
 
-    /* Text Styles */
-
-    p {
-        line-height: 1.1;
-        font-size: 16px;
-    }
-
-    h1 {
-        color:  var(--brandColor);
-        font-size: 26px;
-    }
-
-    h2 {
-        color: var(--brandColor);
-        font-size: 18px;
-    }
-
-    h3 {
-        color: var(--brandColor);
-        font-size: 16px;
-    }
-
     /* Aside Styles */
 
-    
+
     .asideBorderLeft{
 
         border-left: 2px solid var(--brandColor);
@@ -358,7 +327,6 @@ footer img {
     /* Tablet Hero Styles */
 
     #hero {
-        justify-content: center;
         background-position: top right;
         min-height: 35vh;
         padding: 15px;
@@ -372,9 +340,6 @@ footer img {
 
     /* Tablet About Section Styles */
 
-    main {
-        max-width: 95%;
-    }
 
     #about {
         grid-template-rows: 2;
@@ -386,18 +351,14 @@ footer img {
         margin-bottom: var(--tabletSpaceBetweenElements)
     }
 
-    #aboutAside{
-        grid-area: aboutAside;
-    }
 
     #aboutContent {
-
-        margin-top: 20px;
+        margin-top: var(--tabletSpaceBetweenElements)
     }
 
     article img {
         margin-left: 0;
-        max-width: 50%;
+        max-width: 40%;
     }
 
     /* Tablet Work Section */
@@ -457,7 +418,6 @@ footer img {
 
     nav {
         display: grid;
-        justify-content: center;
         grid-template-rows: auto;
         grid-template-columns: auto;
         grid-template-areas: 
@@ -468,7 +428,6 @@ footer img {
 
     #ulNav{
         grid-area: ulNav;
-        justify-items: center;
     }
 
     #logo {
@@ -492,9 +451,11 @@ footer img {
     }
 
     article img {
-        max-width: 100%;
+        min-width: 90%;
         margin-bottom: var(--tabletSpaceBetweenElements);
     }
+
+    /* Mobile Work Section Styles */
 
     #workContent {
         grid-template-areas: 
@@ -514,6 +475,6 @@ footer img {
 
     .portfolioCard {
         margin-top: 25px;
-        background-size: contain;
+        background-size: cover;
     }
 }
