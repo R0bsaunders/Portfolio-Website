@@ -72,6 +72,8 @@ li {
     border-top: 5px solid var(--brandColor);
     border-radius: 5px;
     color: var(--brandColor);
+    text-align: center;
+    padding: 25px;
 }
 
 .asideBorderRight{
@@ -79,6 +81,8 @@ li {
     border-top: 5px solid var(--brandColor);
     border-radius: 5px;
     color: var(--brandColor);
+    text-align: center;
+    padding: 25px;
 }
 
 /* Hero Section Style */
@@ -212,7 +216,6 @@ main {
 }
 #workAside {
     grid-area: workAside;
-    text-align: right;
 }
 
 section a {
@@ -249,4 +252,20 @@ section a {
 
 .contactCards p {
     user-select: all;
+}
+
+/* Footer Styles */
+
+footer {
+    display: flex;
+    background-color: var(--brandColor);
+    width: 100%;
+    padding: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+footer img {
+    border: 1px solid white;
+    margin-bottom: var(--spaceBetweenElements);
 }
