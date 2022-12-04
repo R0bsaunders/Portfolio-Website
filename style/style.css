@@ -7,6 +7,8 @@
 *{
     /*border: 1px solid black;*/
     margin: 0px;
+    word-wrap: break-word;
+    white-space: normal;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -28,6 +30,10 @@ h2 {
 h3 {
     color: var(--brandColor);
     font-size: 22px;
+}
+
+.headers {
+
 }
 
 /* Header Styles */
@@ -68,6 +74,7 @@ li {
 /* Aside Borders */
 
 .asideBorderLeft{
+    position: relative;
     border-right: 5px solid var(--brandColor);
     border-top: 5px solid var(--brandColor);
     border-radius: 5px;
@@ -259,7 +266,6 @@ section a {
 footer {
     display: flex;
     background-color: var(--brandColor);
-    width: 100%;
     padding: 25px;
     justify-content: center;
     text-align: center;
