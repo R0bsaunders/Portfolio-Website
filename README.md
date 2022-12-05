@@ -27,6 +27,10 @@ Here is a screenshot of my portfolio:
 
 ![portfolio demo](./files/robs-portfolio-website-screendhot.png)
 
+Here is a screenshot of my wireframe that helped me visualise the portfolio. Without it, it would have been very difficult to build the site.
+
+![portfolio demo](./files/Wireframe-drawing.jpg)
+
 Brand colors are as follows (becasue it's my favourite colour):
 
 * #450974
